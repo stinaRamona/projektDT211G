@@ -16,9 +16,22 @@ async function getArtInfo(artURL) {
     try {
         let response = await fetch(artURL);
         let artInfo = await response.json();
-        console.log(artInfo);
+        let artInfoPlace = artInfo.items[0].country[0]; // får ut museet där det finns (för första alternativet) - kan sättas in i nominatum! 
+        console.table(artInfoPlace);
+        getMapInfo(artInfoPlace); // det fungerar att få in landet, men inte själva museet. Kanske behöver testa en annan karttjänst. 
     } catch  {
         console.log("N\xe5got gick fel...");
+    }
+}
+async function getMapInfo(artInfoPlace) {
+    try {
+        let mapURL = `https://www.google.com/maps/embed/v1/search?q=${artInfoPlace}&key=AIzaSyA5jgtp-GaWnXrNI1dveaqERx0OEMqsUzM`;
+        let response = await fetch(mapURL);
+        let mapInfo = await response.json();
+        document.getElementsByTagName("iframe")[0].src = mapInfo;
+    //console.table(mapInfo.features[0].geometry.coordinates); 
+    } catch  {
+        console.log("kunde inte l\xe4sa in information...");
     }
 }
 
