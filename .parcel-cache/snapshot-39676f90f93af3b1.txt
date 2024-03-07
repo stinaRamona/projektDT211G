@@ -17,7 +17,7 @@
 106C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\mergeStyles.js133536907538088563 0
 84C:\Users\stina\projekt_dt211G\node_modules\electron-to-chromium\chromium-versions.js133536907533656070 0
 63C:\Users\stina\projekt_dt211G\node_modules\type-fest\index.d.ts133536907536475211 0
-34C:\Users\stina\projekt_dt211G\dist133542073990581273 1
+34C:\Users\stina\projekt_dt211G\dist133542784542944519 1
 85C:\Users\stina\projekt_dt211G\node_modules\utility-types\dist\aliases-and-guards.d.ts133536907536426723 0
 57C:\Users\stina\projekt_dt211G\node_modules\posthtml\types133536907534817031 1
 89C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\addeventlistener.js133536907535322184 0
@@ -56,7 +56,7 @@
 65C:\Users\stina\projekt_dt211G\node_modules\source-map\lib\util.js133536907536190008 0
 91C:\Users\stina\projekt_dt211G\node_modules\@swc\helpers\cjs\_object_destructuring_empty.cjs133536907539773761 0
 93C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\background-clip-text.js133536907539385286 0
-44C:\Users\stina\projekt_dt211G\src\index.html133542073987605906 0
+44C:\Users\stina\projekt_dt211G\src\index.html133542784510580160 0
 59C:\Users\stina\projekt_dt211G\node_modules\error-ex\LICENSE133536907533858223 0
 36C:\Users\stina\projekt_dt211G\src\js133536911404380810 1
 71C:\Users\stina\projekt_dt211G\node_modules\@parcel\transformer-svg\test133536907541612371 1
@@ -64,7 +64,7 @@
 119C:\Users\stina\projekt_dt211G\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional133536907605138528 0
 69C:\Users\stina\projekt_dt211G\node_modules\css-what\lib\es\types.d.ts133536907537311543 0
 59C:\Users\stina\projekt_dt211G\node_modules\base-x\README.md133536907534313718 0
-44C:\Users\stina\projekt_dt211G\src\js\main.js133542070910253820 0
+44C:\Users\stina\projekt_dt211G\src\js\main.js133542784542666712 0
 79C:\Users\stina\projekt_dt211G\node_modules\css-tree\cjs\syntax\config\lexer.cjs133536907540415890 0
 85C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\style-scoped.js133536907550615896 0
 71C:\Users\stina\projekt_dt211G\node_modules\weak-lru-cache\tests\test.js133536907534875548 0
@@ -5877,6 +5877,6 @@
 89C:\Users\stina\projekt_dt211G\node_modules\.bin\node-gyp-build-optional-packages-test.ps1133536907605138528 0
 56C:\Users\stina\projekt_dt211G\node_modules\.bin\svgo.cmd133536907605138528 0
 74C:\Users\stina\projekt_dt211G\node_modules\.bin\update-browserslist-db.ps1133536907605149953 0
-52C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js133542073990493898 0
-56C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js.map133542073990571284 0
-45C:\Users\stina\projekt_dt211G\dist\index.html133542073990581273 0
+45C:\Users\stina\projekt_dt211G\dist\index.html133542784511344344 0
+52C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js133542784542924526 0
+56C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js.map133542784542944519 0

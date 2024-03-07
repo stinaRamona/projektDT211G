@@ -39,7 +39,7 @@ async function getArtInfo(artURL) {
 
 async function getMapInfo(artInfoPlace){
     try {
-        let mapURL = `https://www.google.com/maps/embed/v1/search?q=${artInfoPlace}&key=AIzaSyA5jgtp-GaWnXrNI1dveaqERx0OEMqsUzM`; 
+        let mapURL = `https://www.google.com/maps/embed/v1/search?q=${artInfoPlace}&key=`; 
 
         let response = await fetch(mapURL); 
 
@@ -54,3 +54,8 @@ async function getMapInfo(artInfoPlace){
     }
 }
 
+//UcDZGnfQh4LGU3kPhDQO ID
+
+//gtwDsWMPhuTrBH7k2ps5IGlC8b_ZxPOnGhwMw-ZVUFc KEY
+
+// G key AIzaSyA5jgtp-GaWnXrNI1dveaqERx0OEMqsUzM 
