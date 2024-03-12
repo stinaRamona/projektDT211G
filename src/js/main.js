@@ -8,7 +8,7 @@ searchBtnEl.addEventListener('click', getValue);
 function getValue() {
     let searchbarValue = document.getElementById("searchBar").value; 
 
-    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}`;
+    let bookURL = `https://api.bigbookapi.com/search-books?api-key=10007acc79b54e4cb073cb822ea80a1c&query=${searchbarValue}`;
 
     getBookID(bookURL)
 }
@@ -33,23 +33,43 @@ async function getBookID(bookURL) {
     }
 };  
 
+//Hämtar mer info om boken utifrån bokID från förra API:t
 async function getBookInfo(bookId) {
-    let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82`; 
+    let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=10007acc79b54e4cb073cb822ea80a1c`;
 
     try {
         let response = await fetch(InfoURL); 
 
-        let bookDescription = response.json(); 
+        let bookDescription = await response.json(); 
 
-        console.log(bookDescription); 
+        let isbn = bookDescription.identifiers.isbn_13; 
+
+        getBookReview(isbn)
     } catch {
         console.log("Något gick snett")
     }
 }; 
 
+//hämtar recension från New York Times (OM DET FINNS EN!)
+async function getBookReview(isbn) {
+    let reviewURL = `https://api.nytimes.com/svc/books/v3/reviews.json?isbn=${isbn}&api-key=lBWbzayuv5GjiH2RhfBuxQIDwhQkZNVo`; 
 
+    try {
+        let response = await fetch(reviewURL); 
+
+        let bookReview = await response.json(); 
+
+        console.table(bookReview); 
+    } catch {
+        
+        console.log("Något gick galet!")
+    }
+}
+
+
+//Här kommer funktioner för att skriva ut själva innehålet till DOM 
 /*
-function displayBookInfo(bookInfo) {
+function displayBookInfo(bookDescription) {
     bookInfo.forEach(book => {
         
         document.getElementById("bookList").innerHTML = `
