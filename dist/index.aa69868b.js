@@ -4,7 +4,7 @@ searchBtnEl.addEventListener("click", getValue);
 //Tar värdet från searchbar och sätter in det i URL för API:n 
 function getValue() {
     let searchbarValue = document.getElementById("searchBar").value;
-    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e19903aa65dd4697a3ab9d82d6465d3c=${searchbarValue}&number=5`;
+    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e19903aa65dd4697a3ab9d82d6465d3c&query=${searchbarValue}&number=5`;
     getBookID(bookURL);
 }
 //Hämtar API:n med sökvärdet i och får fram ID på boken för att kunna få mer info
@@ -40,8 +40,7 @@ async function getBookRating(OLID) {
     try {
         let response = await fetch(reviewURL);
         let bookRating = await response.json();
-        avgRat = bookRating.average.summary;
-        console.table(avgRat);
+        console.table(bookRating.summary.average);
     } catch  {
         console.log("N\xe5got gick galet!");
     }
