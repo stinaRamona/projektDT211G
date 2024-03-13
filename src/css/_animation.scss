@@ -1,0 +1,14 @@
+//för animationer/keyframes
+@use "base"; 
+
+@keyframes changeColor {
+    0% {
+        color: red; 
+    }
+    50% {
+        color: green; 
+    }
+    100% {
+        color:blue; 
+    }
+}

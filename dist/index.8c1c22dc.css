@@ -10,20 +10,50 @@ main {
 
 #searchBtn {
   color: #141119;
+  cursor: pointer;
   background-color: #eec200;
   border: 1px solid #141119;
   border-radius: 4px;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 5px;
   font-family: Josefin Sans, sans-serif;
   font-size: 1em;
+  box-shadow: 0 10px #818181;
+}
+
+#searchBtn:hover {
+  background-color: #bb9800;
+}
+
+#searchBtn:active {
+  background-color: #bb9800;
+  transform: translateY(5px);
+  box-shadow: 0 4px #515151;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: green;
+  }
+
+  100% {
+    color: #00f;
+  }
 }
 
 h1 {
   text-align: center;
   padding: 2%;
   font-size: 1.5em;
+}
+
+#animation1 {
+  animation: 3s linear infinite alternate-reverse changeColor;
 }
 
 main {
@@ -43,6 +73,7 @@ input {
 
 label {
   margin-left: 13.5%;
+  padding: 1%;
 }
 
 #searchBtn {

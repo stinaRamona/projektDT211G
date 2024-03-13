@@ -1,11 +1,16 @@
 //SCSS för layout
 @use "base"; 
+@use "animation"; 
 
 h1 {
     text-align: center; 
     font-size:1.5em;
     padding:2%; 
 } 
+
+#animation1 {
+    animation: changeColor 3s infinite alternate-reverse linear; 
+}
 
 main {
     max-width: 850px;
@@ -26,6 +31,7 @@ input {
 
 label {
     margin-left: 13.5%; 
+    padding:1%; 
 } 
 
 #searchBtn {
