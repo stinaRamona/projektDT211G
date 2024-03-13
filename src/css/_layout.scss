@@ -1,4 +1,33 @@
+//SCSS för layout
+@use "base"; 
+
 h1 {
-    text-align: center;
-    margin-top: 10%; 
+    text-align: center; 
+    font-size:1.5em;
+    padding:2%; 
 } 
+
+main {
+    max-width: 850px;
+    margin: 0 auto; 
+    margin-top:7%; 
+    border-radius: 4px;
+} 
+
+input {
+    width:600px; 
+    margin: 0 auto;
+    border-radius:4px;
+    padding:1.5%; 
+    border: 1px solid #808080; 
+    margin-left: 13.5%;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+} 
+
+label {
+    margin-left: 13.5%; 
+} 
+
+#searchBtn {
+    margin-left:50%; 
+}

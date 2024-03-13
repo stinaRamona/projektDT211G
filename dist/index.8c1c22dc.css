@@ -1,5 +1,51 @@
+body {
+  background-color: #8d81a8;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 1.5em;
+}
+
+main {
+  background-color: #c4bdd2;
+}
+
+#searchBtn {
+  color: #141119;
+  background-color: #eec200;
+  border: 1px solid #141119;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 1em;
+}
+
 h1 {
   text-align: center;
-  margin-top: 10%;
+  padding: 2%;
+  font-size: 1.5em;
+}
+
+main {
+  border-radius: 4px;
+  max-width: 850px;
+  margin: 7% auto 0;
+}
+
+input {
+  filter: drop-shadow(5px 5px 5px #0000004d);
+  border: 1px solid gray;
+  border-radius: 4px;
+  width: 600px;
+  margin: 0 auto 0 13.5%;
+  padding: 1.5%;
+}
+
+label {
+  margin-left: 13.5%;
+}
+
+#searchBtn {
+  margin-left: 50%;
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */
