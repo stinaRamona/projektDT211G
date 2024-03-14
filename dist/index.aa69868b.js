@@ -6,7 +6,7 @@ searchBtnEl.addEventListener("click", getValue);
 function getValue() {
     bookInfoContainer.innerHTML = ""; //resnar gamla sökningen om det finns en
     let searchbarValue = document.getElementById("searchBar").value;
-    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=1`;
+    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=2`;
     getBookID(bookURL);
 }
 //Hämtar API:n med sökvärdet i och får fram ID på boken för att kunna få mer info
