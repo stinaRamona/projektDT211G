@@ -4,9 +4,18 @@
 
 h1 {
     text-align: center; 
-    font-size:1.5em;
+    font-size:3em;
     padding:2%; 
 } 
+
+h2 {
+    font-size: 2em; 
+}
+
+p {
+    font-size: 1.25em; 
+    max-width: 34em;
+}
 
 #animation1 {
     animation: changeColor 3s infinite alternate-reverse linear; 
@@ -20,7 +29,7 @@ main {
 } 
 
 input {
-    width:600px; 
+    width:70%; 
     margin: 0 auto;
     border-radius:4px;
     padding:1.5%; 
@@ -32,8 +41,21 @@ input {
 label {
     margin-left: 13.5%; 
     padding:1%; 
+    font-size:1.25em; 
 } 
 
 #searchBtn {
     margin-left:50%; 
+} 
+
+//fär där informationen kommer att skrivas ut
+#bookInfoContainer {
+    padding:1.5%; 
+} 
+
+#bild {  
+    display:block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width:200px; 
 }

@@ -6,12 +6,21 @@
     "start": "parcel",
     "build": "parcel build"
   },
+  "legacy": {
+    "engines": {
+      "browsers": "> 0.5%, last 2 versions, not dead"
+    }
+  },
+  "webp": {
+    "nearLossLess":true
+  },
   "author": "Stina Persson",
   "license": "ISC",
   "main": "index.js",
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "sharp": "^0.31.3"
   }
 }

@@ -1,7 +1,6 @@
 body {
   background-color: #8d81a8;
   font-family: Josefin Sans, sans-serif;
-  font-size: 1.5em;
 }
 
 main {
@@ -18,7 +17,7 @@ main {
   margin-bottom: 15px;
   padding: 5px;
   font-family: Josefin Sans, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   box-shadow: 0 10px #818181;
 }
 
@@ -49,7 +48,16 @@ main {
 h1 {
   text-align: center;
   padding: 2%;
-  font-size: 1.5em;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  max-width: 34em;
+  font-size: 1.25em;
 }
 
 #animation1 {
@@ -66,7 +74,7 @@ input {
   filter: drop-shadow(5px 5px 5px #0000004d);
   border: 1px solid gray;
   border-radius: 4px;
-  width: 600px;
+  width: 70%;
   margin: 0 auto 0 13.5%;
   padding: 1.5%;
 }
@@ -74,9 +82,21 @@ input {
 label {
   margin-left: 13.5%;
   padding: 1%;
+  font-size: 1.25em;
 }
 
 #searchBtn {
   margin-left: 50%;
+}
+
+#bookInfoContainer {
+  padding: 1.5%;
+}
+
+#bild {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */

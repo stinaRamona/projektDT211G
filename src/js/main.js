@@ -12,7 +12,7 @@ function getValue() {
 
     let searchbarValue = document.getElementById("searchBar").value; 
 
-    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=2`;
+    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=1`;
 
     getBookID(bookURL)
 }
