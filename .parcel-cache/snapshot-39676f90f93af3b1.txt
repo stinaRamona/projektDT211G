@@ -25,7 +25,7 @@
 90C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\css-cascade-scope.js133548044980076710 0
 74C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\regions\GF.js133548044982435413 0
 63C:\Users\stina\projekt_dt211G\node_modules\type-fest\index.d.ts133548044975228751 0
-34C:\Users\stina\projekt_dt211G\dist133548882432651101 1
+34C:\Users\stina\projekt_dt211G\dist133548925204053540 1
 85C:\Users\stina\projekt_dt211G\node_modules\utility-types\dist\aliases-and-guards.d.ts133548044975158244 0
 57C:\Users\stina\projekt_dt211G\node_modules\posthtml\types133548044973497844 1
 89C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\addeventlistener.js133548044974083350 0
@@ -85,7 +85,7 @@
 119C:\Users\stina\projekt_dt211G\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional133548044987365615 0
 69C:\Users\stina\projekt_dt211G\node_modules\css-what\lib\es\types.d.ts133548044976211472 0
 59C:\Users\stina\projekt_dt211G\node_modules\base-x\README.md133548044972914145 0
-44C:\Users\stina\projekt_dt211G\src\js\main.js133548882432299055 0
+44C:\Users\stina\projekt_dt211G\src\js\main.js133548925203765238 0
 79C:\Users\stina\projekt_dt211G\node_modules\css-tree\cjs\syntax\config\lexer.cjs133548044978533481 0
 85C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\style-scoped.js133548044984998261 0
 88C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\getrandomvalues.js133548044982422960 0
@@ -5994,5 +5994,5 @@
 56C:\Users\stina\projekt_dt211G\node_modules\.bin\svgo.cmd133548044987365615 0
 74C:\Users\stina\projekt_dt211G\node_modules\.bin\update-browserslist-db.ps1133548044987365615 0
 57C:\Users\stina\projekt_dt211G\dist\index.8c1c22dc.css.map133548792392098262 0
-52C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js133548882432611163 0
-56C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js.map133548882432641111 0
+52C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js133548925204033547 0
+56C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js.map133548925204043540 0

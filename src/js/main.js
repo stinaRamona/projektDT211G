@@ -8,7 +8,7 @@ searchBtnEl.addEventListener('click', getValue);
 
 //Tar värdet från searchbar och sätter in det i URL för API:n 
 function getValue() { 
-    bookInfoContainer.innerHTML = "";
+    bookInfoContainer.innerHTML = ""; //resnar gamla sökningen om det finns en
 
     let searchbarValue = document.getElementById("searchBar").value; 
 
@@ -46,38 +46,22 @@ async function getBookInfo(bookId) {
 
         let bookDescription = await response.json();
         
-        displayBookInfo(bookDescription);
-        
-
         let OLID = bookDescription.identifiers.open_library_id; 
 
-        getBookRating(OLID); 
+        let response2 = await fetch(`https://openlibrary.org/works/${OLID}/ratings.json`) 
+
+        let bookRating = await response2.json(); 
+
+        let avgRat = bookRating.summary.average; 
+
+        displayBookInfo(bookDescription, avgRat);
+          
 
     } catch {
         console.log("Något gick snett")
     }
 }; 
 
-
-//hämtar recension från New York Times (OM DET FINNS EN!)
-async function getBookRating(OLID) {
-    let reviewURL = `https://openlibrary.org/works/${OLID}/ratings.json`; 
-
-    try {
-        let response = await fetch(reviewURL); 
-
-        let bookRating = await response.json();  
-
-        let avgRat = bookRating.summary.average; 
-
-        displayBookInfo(bookDescription, avgRat); 
-
-    } catch {
-        
-        console.log("Något gick galet!")
-    }
-}
- 
 
 // Rensa innehållet en gång vid start
 bookInfoContainer.innerHTML = "";
@@ -99,7 +83,7 @@ function displayBookInfo(bookDescription, avgRat) {
     descriptionElement.textContent = "Beskrivning: " + bookDescription.description; 
 
     let ratingElement = document.createElement("p"); 
-    ratingElement.textContent = "Betyg från Open Library: " + avgRat; 
+    ratingElement.textContent = "Betyg från Open Library: " + avgRat + "/5"; 
 
     // Lägg till de skapade elementen i DOM
     

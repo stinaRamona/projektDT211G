@@ -4,7 +4,7 @@ let bookInfoContainer = document.getElementById("bookInfoContainer");
 searchBtnEl.addEventListener("click", getValue);
 //Tar värdet från searchbar och sätter in det i URL för API:n 
 function getValue() {
-    bookInfoContainer.innerHTML = "";
+    bookInfoContainer.innerHTML = ""; //resnar gamla sökningen om det finns en
     let searchbarValue = document.getElementById("searchBar").value;
     let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=2`;
     getBookID(bookURL);
@@ -28,41 +28,31 @@ async function getBookInfo(bookId) {
     let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82`;
     try {
         let response = await fetch(InfoURL);
-        let bookDescription1 = await response.json();
-        displayBookInfo(bookDescription1);
-        let OLID = bookDescription1.identifiers.open_library_id;
-        getBookRating(OLID);
-    } catch  {
-        console.log("N\xe5got gick snett");
-    }
-}
-//hämtar recension från New York Times (OM DET FINNS EN!)
-async function getBookRating(OLID) {
-    let reviewURL = `https://openlibrary.org/works/${OLID}/ratings.json`;
-    try {
-        let response = await fetch(reviewURL);
-        let bookRating = await response.json();
+        let bookDescription = await response.json();
+        let OLID = bookDescription.identifiers.open_library_id;
+        let response2 = await fetch(`https://openlibrary.org/works/${OLID}/ratings.json`);
+        let bookRating = await response2.json();
         let avgRat = bookRating.summary.average;
         displayBookInfo(bookDescription, avgRat);
     } catch  {
-        console.log("N\xe5got gick galet!");
+        console.log("N\xe5got gick snett");
     }
 }
 // Rensa innehållet en gång vid start
 bookInfoContainer.innerHTML = "";
 //Här kommer funktioner för att skriva ut själva innehålet till DOM 
-function displayBookInfo(bookDescription1, avgRat) {
+function displayBookInfo(bookDescription, avgRat) {
     console.log(avgRat) // glr att den fastnar i catch. Kanske inte kan skicka in två värden i en funktion  
     ;
     // Skapa element för att visa bokinfo
     let titleElement = document.createElement("h2");
-    titleElement.textContent = bookDescription1.title;
+    titleElement.textContent = bookDescription.title;
     let authorElement = document.createElement("p");
-    authorElement.textContent = "F\xf6rfattare: " + bookDescription1.authors[0].name;
+    authorElement.textContent = "F\xf6rfattare: " + bookDescription.authors[0].name;
     let descriptionElement = document.createElement("p");
-    descriptionElement.textContent = "Beskrivning: " + bookDescription1.description;
+    descriptionElement.textContent = "Beskrivning: " + bookDescription.description;
     let ratingElement = document.createElement("p");
-    ratingElement.textContent = "Betyg fr\xe5n Open Library: " + avgRat;
+    ratingElement.textContent = "Betyg fr\xe5n Open Library: " + avgRat + "/5";
     // Lägg till de skapade elementen i DOM
     bookInfoContainer.appendChild(titleElement);
     bookInfoContainer.appendChild(authorElement);
