@@ -52,7 +52,8 @@ function displayBookInfo(bookDescription, avgRat) {
     let descriptionElement = document.createElement("p");
     descriptionElement.textContent = "Beskrivning: " + bookDescription.description;
     let ratingElement = document.createElement("p");
-    ratingElement.textContent = "Betyg fr\xe5n Open Library: " + avgRat + "/5";
+    if (avgRat === null) ratingElement.textContent = "Betyg fr\xe5n Open Library: Inget betyg finns!";
+    else ratingElement.textContent = "Betyg fr\xe5n Open Library: " + avgRat + "/5";
     // Lägg till de skapade elementen i DOM
     bookInfoContainer.appendChild(titleElement);
     bookInfoContainer.appendChild(authorElement);

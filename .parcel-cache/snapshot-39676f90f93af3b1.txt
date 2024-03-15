@@ -25,7 +25,7 @@
 52C:\Users\stina\projekt_dt211G\node_modules\sharp\src133548940843499450 1
 83C:\Users\stina\projekt_dt211G\node_modules\sharp\build\Release\libgobject-2.0-0.dll133119484170000000 0
 63C:\Users\stina\projekt_dt211G\node_modules\type-fest\index.d.ts133548044975228751 0
-34C:\Users\stina\projekt_dt211G\dist133549046230546690 1
+34C:\Users\stina\projekt_dt211G\dist133549694394973343 1
 85C:\Users\stina\projekt_dt211G\node_modules\utility-types\dist\aliases-and-guards.d.ts133548044975158244 0
 57C:\Users\stina\projekt_dt211G\node_modules\is-binary-path133548088617170023 1
 90C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\css-cascade-scope.js133548044980076710 0
@@ -98,7 +98,7 @@
 65C:\Users\stina\projekt_dt211G\node_modules\sharp\lib\composite.js133548940843544681 0
 69C:\Users\stina\projekt_dt211G\node_modules\css-what\lib\es\types.d.ts133548044976211472 0
 85C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\style-scoped.js133548044984998261 0
-44C:\Users\stina\projekt_dt211G\src\js\main.js133549046229623529 0
+44C:\Users\stina\projekt_dt211G\src\js\main.js133549694689264959 0
 92C:\Users\stina\projekt_dt211G\node_modules\sharp\vendor\8.13.3\win32-x64\include\vips\type.h133117882010000000 0
 79C:\Users\stina\projekt_dt211G\node_modules\css-tree\cjs\syntax\config\lexer.cjs133548044978533481 0
 60C:\Users\stina\projekt_dt211G\node_modules\type-fest\license133548044971712376 0
@@ -1153,7 +1153,7 @@
 82C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\web-share.js133548044985798978 0
 86C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\features\notifications.js133548044984126204 0
 115C:\Users\stina\projekt_dt211G\node_modules\sharp\vendor\8.13.3\win32-x64\include\librsvg-2.0\librsvg\rsvg-version.h133117882010000000 0
-63C:\Users\stina\projekt_dt211G\dist\boktrave_minst.e56ec9fb.webp133548940869435125 0
+63C:\Users\stina\projekt_dt211G\dist\boktrave_minst.e56ec9fb.webp133549654369031584 0
 67C:\Users\stina\projekt_dt211G\node_modules\source-map\lib\base64.js133548044973859175 0
 70C:\Users\stina\projekt_dt211G\node_modules\htmlnano\docs\versions.json133548044977643978 0
 73C:\Users\stina\projekt_dt211G\node_modules\source-map\lib\mapping-list.js133548044974226764 0
@@ -1493,7 +1493,7 @@
 61C:\Users\stina\projekt_dt211G\node_modules\sharp\src\common.h133548940843460931 0
 69C:\Users\stina\projekt_dt211G\node_modules\svgo\plugins\removeDesc.js133548044978236482 0
 98C:\Users\stina\projekt_dt211G\node_modules\sharp\vendor\8.13.3\win32-x64\include\vips\connection.h133117882010000000 0
-61C:\Users\stina\projekt_dt211G\dist\projekt_dt211G.59712999.js133548940869520620 0
+61C:\Users\stina\projekt_dt211G\dist\projekt_dt211G.59712999.js133549654368975096 0
 75C:\Users\stina\projekt_dt211G\node_modules\svgo\plugins\removeDimensions.js133548044978269942 0
 78C:\Users\stina\projekt_dt211G\node_modules\caniuse-lite\data\regions\alt-oc.js133548044975778206 0
 106C:\Users\stina\projekt_dt211G\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\package.json133548044975758154 0
@@ -2955,7 +2955,7 @@
 86C:\Users\stina\projekt_dt211G\node_modules\sharp\node_modules\node-addon-api\README.md133548940843250189 0
 57C:\Users\stina\projekt_dt211G\node_modules\clone\clone.js133548044973273897 0
 96C:\Users\stina\projekt_dt211G\node_modules\sharp\node_modules\node-addon-api\tools\check-napi.js133548940842972691 0
-62C:\Users\stina\projekt_dt211G\dist\boktrave_minst.92e0c360.png133548940869435125 0
+62C:\Users\stina\projekt_dt211G\dist\boktrave_minst.92e0c360.png133549654368877487 0
 98C:\Users\stina\projekt_dt211G\node_modules\sharp\node_modules\node-addon-api\tools\clang-format.js133548940842972691 0
 96C:\Users\stina\projekt_dt211G\node_modules\sharp\node_modules\node-addon-api\tools\conversion.js133548940843005946 0
 65C:\Users\stina\projekt_dt211G\node_modules\mdn-data\css\readme.md133548044976511403 0
@@ -3911,7 +3911,7 @@
 113C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\css\units.schema.json133548044976368874 0
 60C:\Users\stina\projekt_dt211G\node_modules\immutable\LICENSE133548088617047165 0
 65C:\Users\stina\projekt_dt211G\node_modules\immutable\package.json133548088617588608 0
-45C:\Users\stina\projekt_dt211G\dist\index.html133548941495957427 0
+45C:\Users\stina\projekt_dt211G\dist\index.html133549654369374639 0
 72C:\Users\stina\projekt_dt211G\node_modules\immutable\dist\immutable.d.ts133548088617641110 0
 75C:\Users\stina\projekt_dt211G\node_modules\immutable\dist\immutable.js.flow133548088617240029 0
 74C:\Users\stina\projekt_dt211G\node_modules\immutable\dist\immutable.min.js133548088617578607 0
@@ -6319,7 +6319,7 @@
 115C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\Selector.js133548044979668229 0
 72C:\Users\stina\projekt_dt211G\node_modules\@parcel\source-map\index.d.ts133548044979235691 0
 74C:\Users\stina\projekt_dt211G\node_modules\@parcel\source-map\package.json133548044975685240 0
-65C:\Users\stina\projekt_dt211G\dist\projekt_dt211G.59712999.js.map133548940869543350 0
+65C:\Users\stina\projekt_dt211G\dist\projekt_dt211G.59712999.js.map133549654369005081 0
 83C:\Users\stina\projekt_dt211G\node_modules\@parcel\source-map\parcel_sourcemap_wasm133548044974767015 1
 93C:\Users\stina\projekt_dt211G\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node133548044979309426 1
 105C:\Users\stina\projekt_dt211G\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-web\package.json133548044975852400 0
@@ -6834,7 +6834,7 @@
 121C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\MediaQuery.js133548044978946832 0
 125C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\MediaQueryList.js133548044978980678 0
 117C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Number.js133548044979376248 0
-53C:\Users\stina\projekt_dt211G\dist\index.8c1c22dc.css133548955876973556 0
+53C:\Users\stina\projekt_dt211G\dist\index.8c1c22dc.css133549654369304277 0
 119C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Operator.js133548044979407707 0
 121C:\Users\stina\projekt_dt211G\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Percentage.js133548044979521562 0
 73C:\Users\stina\projekt_dt211G\node_modules\@parcel\core\src\Dependency.js133548044978154125 0
@@ -7151,6 +7151,6 @@
 56C:\Users\stina\projekt_dt211G\node_modules\.bin\sass.ps1133548088617722597 0
 56C:\Users\stina\projekt_dt211G\node_modules\.bin\svgo.cmd133548044987365615 0
 74C:\Users\stina\projekt_dt211G\node_modules\.bin\update-browserslist-db.ps1133548044987365615 0
-57C:\Users\stina\projekt_dt211G\dist\index.8c1c22dc.css.map133548955876983576 0
-52C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js133549046230506687 0
-56C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js.map133549046230526699 0
+57C:\Users\stina\projekt_dt211G\dist\index.8c1c22dc.css.map133549654369364665 0
+52C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js133549694394953356 0
+56C:\Users\stina\projekt_dt211G\dist\index.aa69868b.js.map133549694394973343 0
