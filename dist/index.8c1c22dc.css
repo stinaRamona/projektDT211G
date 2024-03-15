@@ -45,6 +45,10 @@ main {
   }
 }
 
+#animation1 {
+  animation: 3s linear infinite alternate-reverse changeColor;
+}
+
 h1 {
   text-align: center;
   padding: 2%;
@@ -58,10 +62,6 @@ h2 {
 p {
   max-width: 34em;
   font-size: 1.25em;
-}
-
-#animation1 {
-  animation: 3s linear infinite alternate-reverse changeColor;
 }
 
 main {

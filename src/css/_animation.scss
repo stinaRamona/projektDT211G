@@ -11,4 +11,8 @@
     100% {
         color:blue; 
     }
+} 
+
+#animation1 {
+    animation: changeColor 3s infinite alternate-reverse linear; 
 }
