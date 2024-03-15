@@ -12,7 +12,7 @@ function getValue() {
 
     let searchbarValue = document.getElementById("searchBar").value; 
 
-    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=2`;
+    let bookURL = `https://api.bigbookapi.com/search-books?api-key=10007acc79b54e4cb073cb822ea80a1c&query=${searchbarValue}&number=4`;
 
     getBookID(bookURL)
 }
@@ -39,7 +39,7 @@ async function getBookID(bookURL) {
 
 //Hämtar mer info om boken utifrån bokID från förra API:t
 async function getBookInfo(bookId) {
-    let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82`;
+    let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=10007acc79b54e4cb073cb822ea80a1c`;
 
     try {
         let response = await fetch(InfoURL); 
@@ -54,7 +54,7 @@ async function getBookInfo(bookId) {
 
         let avgRat = bookRating.summary.average; 
 
-        displayBookInfo(bookDescription, avgRat);
+        displayBookInfo(bookDescription, avgRat, OLID);
           
 
     } catch {
@@ -69,7 +69,7 @@ bookInfoContainer.innerHTML = "";
 
 //Här kommer funktioner för att skriva ut själva innehålet till DOM 
  
-function displayBookInfo(bookDescription, avgRat) {
+function displayBookInfo(bookDescription, avgRat, OLID) {
     console.log(avgRat) // glr att den fastnar i catch. Kanske inte kan skicka in två värden i en funktion  
     
     // Skapa element för att visa bokinfo
@@ -88,12 +88,16 @@ function displayBookInfo(bookDescription, avgRat) {
     } else {
         ratingElement.textContent = "Betyg från Open Library: " + avgRat + "/5"; 
     }
+
+    let openLibraryElement = document.createElement("p"); 
+    openLibraryElement.innerHTML = "<a href='https://openlibrary.org/works/" + OLID +"'>Besök boken på Open Library</a>"; 
     // Lägg till de skapade elementen i DOM
     
     bookInfoContainer.appendChild(titleElement);
     bookInfoContainer.appendChild(authorElement);
     bookInfoContainer.appendChild(descriptionElement);
     bookInfoContainer.appendChild(ratingElement); 
+    bookInfoContainer.appendChild(openLibraryElement); 
 
     // Skapa en linje mellan varje bok 
     let lineBreak = document.createElement("hr");

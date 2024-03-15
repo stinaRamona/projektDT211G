@@ -6,7 +6,7 @@ searchBtnEl.addEventListener("click", getValue);
 function getValue() {
     bookInfoContainer.innerHTML = ""; //resnar gamla sökningen om det finns en
     let searchbarValue = document.getElementById("searchBar").value;
-    let bookURL = `https://api.bigbookapi.com/search-books?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82&query=${searchbarValue}&number=2`;
+    let bookURL = `https://api.bigbookapi.com/search-books?api-key=10007acc79b54e4cb073cb822ea80a1c&query=${searchbarValue}&number=4`;
     getBookID(bookURL);
 }
 //Hämtar API:n med sökvärdet i och får fram ID på boken för att kunna få mer info
@@ -25,7 +25,7 @@ async function getBookID(bookURL) {
 }
 //Hämtar mer info om boken utifrån bokID från förra API:t
 async function getBookInfo(bookId) {
-    let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=e6f1f17954b54f6bbc6cb857bc9bfb82`;
+    let InfoURL = `https://api.bigbookapi.com/${bookId}?api-key=10007acc79b54e4cb073cb822ea80a1c`;
     try {
         let response = await fetch(InfoURL);
         let bookDescription = await response.json();
@@ -33,7 +33,7 @@ async function getBookInfo(bookId) {
         let response2 = await fetch(`https://openlibrary.org/works/${OLID}/ratings.json`);
         let bookRating = await response2.json();
         let avgRat = bookRating.summary.average;
-        displayBookInfo(bookDescription, avgRat);
+        displayBookInfo(bookDescription, avgRat, OLID);
     } catch  {
         console.log("N\xe5got gick snett");
     }
@@ -41,7 +41,7 @@ async function getBookInfo(bookId) {
 // Rensa innehållet en gång vid start
 bookInfoContainer.innerHTML = "";
 //Här kommer funktioner för att skriva ut själva innehålet till DOM 
-function displayBookInfo(bookDescription, avgRat) {
+function displayBookInfo(bookDescription, avgRat, OLID) {
     console.log(avgRat) // glr att den fastnar i catch. Kanske inte kan skicka in två värden i en funktion  
     ;
     // Skapa element för att visa bokinfo
@@ -54,11 +54,14 @@ function displayBookInfo(bookDescription, avgRat) {
     let ratingElement = document.createElement("p");
     if (avgRat === null) ratingElement.textContent = "Betyg fr\xe5n Open Library: Inget betyg finns!";
     else ratingElement.textContent = "Betyg fr\xe5n Open Library: " + avgRat + "/5";
+    let openLibraryElement = document.createElement("p");
+    openLibraryElement.innerHTML = "<a href='https://openlibrary.org/works/" + OLID + "'>Bes\xf6k boken p\xe5 Open Library</a>";
     // Lägg till de skapade elementen i DOM
     bookInfoContainer.appendChild(titleElement);
     bookInfoContainer.appendChild(authorElement);
     bookInfoContainer.appendChild(descriptionElement);
     bookInfoContainer.appendChild(ratingElement);
+    bookInfoContainer.appendChild(openLibraryElement);
     // Skapa en linje mellan varje bok 
     let lineBreak = document.createElement("hr");
     bookInfoContainer.appendChild(lineBreak);
