@@ -16,7 +16,6 @@
   },
   "author": "Stina Persson",
   "license": "ISC",
-  "main": "index.js",
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
